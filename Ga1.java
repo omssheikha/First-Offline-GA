@@ -23,6 +23,7 @@ public class Ga1
         while(true)
         {
             Genetic g = new Genetic(tasks, bestDegredation);
+            g.StartGA();
             if(g.isValid())
                 bestDegredation-= 0.05;
             else
